@@ -181,7 +181,7 @@ const MainContainer = () => {
                             </div>
                         </div>
                     </div>
-                    <div onClick={()=>toggle.setOption()} className="closeImg bg-[#FFFFFF] absolute p-2 rounded-full top-1 -right-16 cursor-pointer">
+                    <div onClick={()=>toggle.handleViewProfileClick(toggle.profile)} className="closeImg bg-[#FFFFFF] absolute p-2 rounded-full top-1 -right-16 cursor-pointer">
                         <img src={close} alt="" className="size-6" />
                     </div>
                 </div>
