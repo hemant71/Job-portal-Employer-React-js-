@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import SingleApplication from './SingleApplication';
 import info from '../../assets/images/info.svg';
 import ronald from '../../assets/ronald.png';
 import dots from '../../assets/dots.svg';
@@ -118,6 +119,7 @@ const MainContainer = () => {
     }, []);
 
     return (
+        <toggleContext.Provider value={{setOption}}>
         <div className="flex flex-col gap-4 mx-auto w-[60vw] container items-center ">
             <div className="heading flex justify-between min-w-[60vw] items-center my-6">
                 <h1 className="text-lg font-[500]">Saved Candidates</h1>
@@ -162,13 +164,23 @@ const MainContainer = () => {
                                     )}
                                 </button>
                                 <img onClick={() => handleClickDot(candidate.id)} src={dots} alt="..." className={`cursor-pointer rotate-90 opacity-[0.4] ${option === candidate.id ? 'bg-[#8d8d8c]' : null} px-2 py-2 rounded-md`} />
+                                {option === candidate.id ? (<SingleApplication/>):null}
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
         </div>
+        </toggleContext.Provider>
     );
 };
 
 export default MainContainer;
+
+
+
+
+//context provider
+import { createContext } from 'react';
+
+export const toggleContext=createContext(null);

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import {useContext} from 'react'
+import { toggleContext } from './SavedCandidates';
 import close from '../../assets/close.svg'
 import ronald from '../../assets/ronald.png'
 import star from '../../assets/star.png'
@@ -25,6 +27,7 @@ import call from '../../assets/images/call.svg'
 
 const MainContainer = () => {
     const [createCol, setCreateCol] = useState(false)
+    const toggle=useContext(toggleContext)
 
     const handleCreate = () => {
         setCreateCol(true)
@@ -178,7 +181,7 @@ const MainContainer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="closeImg bg-[#FFFFFF] absolute p-2 rounded-full top-1 -right-16 cursor-pointer">
+                    <div onClick={()=>toggle.setOption()} className="closeImg bg-[#FFFFFF] absolute p-2 rounded-full top-1 -right-16 cursor-pointer">
                         <img src={close} alt="" className="size-6" />
                     </div>
                 </div>
