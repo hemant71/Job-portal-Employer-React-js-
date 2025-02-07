@@ -1,6 +1,6 @@
 import React from "react";
 import Correct from "../assets/Correct.png";
-import logo from "../assets/Logo.png";
+import logo from "../assets/logo.png";
 import image from "../assets/flag.png";
 import PhoneCall from "../assets/PhoneCall.png";
 import Down from "../assets/Down.png"
