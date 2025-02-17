@@ -1,5 +1,5 @@
 import React from "react";
-import phone_icon from "../../assets/phone.png";
+import phone_icon from "../../assets/Phone.png";
 import tech_icon from "../../assets/Tech.png";
 import bell_icon from "../../assets/Bell.png";
 import insta_icon from "../../assets/Insta.png";

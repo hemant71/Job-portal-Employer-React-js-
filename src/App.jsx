@@ -22,6 +22,7 @@ import Faqs from "./JobPost/components/Faqs";
 import TermsConditions from'./JobPost/components/TermsConditions'
 import Contact from'./JobPost/components/Contact'
 import TalentPool from './JobPost/components/TalentPool'
+import ComingSoonPage from "./pages/module/ComingSoonPage";
 
 const Home = () => <h1>Home<MainContainer/></h1>;
 const FindCandidate = () => <h1>FindCandidate</h1>;
@@ -52,6 +53,7 @@ function App() {
               <Route path="/termsConditions" element={<TermsConditions />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/talentPool" element={<TalentPool />} />
+              <Route path="/comingSoonPage" element={<ComingSoonPage />} />
               
               {/* These are login components. 
                   They are currently commented out due to uncertainty about the routing. */}
