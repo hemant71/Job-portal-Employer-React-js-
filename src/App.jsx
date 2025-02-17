@@ -18,6 +18,9 @@ import DetailsPage from "./pages/auth/DetailsPage";
 import SavedCandidates from './JobPost/components/SavedCandidates'
 import PaymentBilling from "./JobPost/components/PaymentBilling";
 import ErrorPage from "./JobPost/components/pages/ErrorPage";
+import Faqs from "./JobPost/components/Faqs";
+import TermsConditions from'./JobPost/components/TermsConditions'
+import Contact from'./JobPost/components/Contact'
 
 const Home = () => <h1>Home<MainContainer/></h1>;
 const FindCandidate = () => <h1>FindCandidate</h1>;
@@ -44,7 +47,9 @@ function App() {
               <Route path="/my-jobs" element={<CandidatePool />} />
               <Route path="/applications" element={<Applications />} />
               <Route path="/customer-supports" element={<CustomerSupports />} />
-              <Route path="*" element={<ErrorPage/>} />
+              <Route path="/faqs" element={<Faqs />} />
+              <Route path="/termsConditions" element={<TermsConditions />} />
+              <Route path="/contact" element={<Contact />} />
               
               {/* These are login components. 
                   They are currently commented out due to uncertainty about the routing. */}
@@ -54,6 +59,7 @@ function App() {
               <Route path="/forgetPassword" element={<ForgetPassword />} />
               <Route path="/resetPassword" element={<ResetPassword />} />
               <Route path="/detailspage" element={<DetailsPage />} /> */}
+              <Route path="*" element={<ErrorPage/>} />
             </Routes>
           </Body>
         </Router>
