@@ -17,6 +17,7 @@ import ResetPassword from "./pages/auth/ResetPassword";
 import DetailsPage from "./pages/auth/DetailsPage";
 import SavedCandidates from './JobPost/components/SavedCandidates'
 import PaymentBilling from "./JobPost/components/PaymentBilling";
+import ErrorPage from "./JobPost/components/pages/ErrorPage";
 
 const Home = () => <h1>Home<MainContainer/></h1>;
 const FindCandidate = () => <h1>FindCandidate</h1>;
@@ -43,6 +44,7 @@ function App() {
               <Route path="/my-jobs" element={<CandidatePool />} />
               <Route path="/applications" element={<Applications />} />
               <Route path="/customer-supports" element={<CustomerSupports />} />
+              <Route path="*" element={<ErrorPage/>} />
               
               {/* These are login components. 
                   They are currently commented out due to uncertainty about the routing. */}
