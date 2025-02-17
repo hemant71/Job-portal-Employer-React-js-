@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaInstagram, FaBell } from "react-icons/fa";
 import { BsThreeDotsVertical } from "react-icons/bs";
-// import Sidebar from "./Sidebar";
+import Sidebar from "./Sidebar";
 import JobPromotionModal from "./JobPromotionModal";
 
 const jobs = [
@@ -24,10 +24,24 @@ const Dashboard = () => {
 
   return (
     <>
+      {/* Header Section */}
+      <div className="flex items-center justify-between p-2">
+        <img src="/public/Group_8-removebg-preview 1.png" alt="TechnoHire Logo" className="h-18 w-50" />
+
+        <div className="flex items-center space-x-4 mr-96">
+          <FaBell />
+          <button className="border border-blue-400 px-4 py-2 text-blue-400 font-bold rounded">Post A Job</button>
+          <FaInstagram className="h-8 w-8 text-pink-500 cursor-pointer" />
+        </div>
+      </div>
 
       {/* Layout */}
       <div className="flex h-screen bg-gray-100">
-        <main className=" p-6 overflow-y-auto hide-scrollbar w-[100%]">
+        <aside className="w-1/4 bg-white p-6">
+          <Sidebar />
+        </aside>
+
+        <main className="w-3/4 p-6 overflow-y-auto">
           <div className="flex justify-between items-center p-4 rounded-md">
             <h2 className="text-2xl font-semibold">My Jobs ({jobs.length})</h2>
 

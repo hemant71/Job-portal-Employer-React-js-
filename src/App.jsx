@@ -6,7 +6,7 @@ import Overview from "./JobPost/components/pages/Overview";
 import Dashboard from "./JobPost/components/Dashboard/Dashboard";
 import MainSetting from "./JobPost/components/pages/settings/MainSetting";
 import Applications from "./JobPost/components/Applications"
-import PostJobForm from "../src/JobPost/components/PostJobForm"
+import PostJobForm from "./JobPost/components/PostJobForm"
 import CandidatePool from '../src/JobPost/components/CandidatePool'
 import MainContainer from "./JobPost/components/MainContainer";
 import Header from "./JobPost/Header";
@@ -17,10 +17,11 @@ import ResetPassword from "./pages/auth/ResetPassword";
 import DetailsPage from "./pages/auth/DetailsPage";
 import SavedCandidates from './JobPost/components/SavedCandidates'
 import PaymentBilling from "./JobPost/components/PaymentBilling";
-import ErrorPage from "./JobPost/components/pages/ErrorPage";
+import NotFound from "./JobPost/components/pages/ErrorPage";
 import Faqs from "./JobPost/components/Faqs";
 import TermsConditions from'./JobPost/components/TermsConditions'
 import Contact from'./JobPost/components/Contact'
+import TalentPool from './JobPost/components/TalentPool'
 
 const Home = () => <h1>Home<MainContainer/></h1>;
 const FindCandidate = () => <h1>FindCandidate</h1>;
@@ -50,6 +51,7 @@ function App() {
               <Route path="/faqs" element={<Faqs />} />
               <Route path="/termsConditions" element={<TermsConditions />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/talentPool" element={<TalentPool />} />
               
               {/* These are login components. 
                   They are currently commented out due to uncertainty about the routing. */}
@@ -59,7 +61,7 @@ function App() {
               <Route path="/forgetPassword" element={<ForgetPassword />} />
               <Route path="/resetPassword" element={<ResetPassword />} />
               <Route path="/detailspage" element={<DetailsPage />} /> */}
-              <Route path="*" element={<ErrorPage/>} />
+              <Route path="*" element={<NotFound/>} />
             </Routes>
           </Body>
         </Router>

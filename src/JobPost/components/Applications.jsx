@@ -105,7 +105,7 @@ const MainContainer = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-1 w-[68vw] mx-auto overflow-hidden h-[105vh]">
+      <div className= "p-4 flex flex-col gap-1 w-[68vw] mx-auto overflow-hidden h-[105vh]">
         <div className="RouteHeading flex gap-1 container mx-auto mt-4">
           <span className="text-[13px] text-[#8d8d8c]">Home /</span>
           <span className="text-[13px] text-[#8d8d8c]">Job /</span>
