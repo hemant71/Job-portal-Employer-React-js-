@@ -54,6 +54,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/talentPool" element={<TalentPool />} />
               <Route path="/comingSoonPage" element={<ComingSoonPage />} />
+
               
               {/* These are login components. 
                   They are currently commented out due to uncertainty about the routing. */}
@@ -64,6 +65,7 @@ function App() {
               <Route path="/resetPassword" element={<ResetPassword />} />
               <Route path="/detailspage" element={<DetailsPage />} /> */}
               <Route path="*" element={<NotFound/>} />
+
             </Routes>
           </Body>
         </Router>

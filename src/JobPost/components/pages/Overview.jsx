@@ -21,9 +21,9 @@ const Overview = () => {
   ];
 
   return (
-    <div>
+    <div className="p-4">
       {/* Header Section */}
-      <div className="flex justify-between items-center">
+      <div className=" flex justify-between items-center">
         <h2 className="text-xl font-semibold">Hello, Instagram</h2>
       </div>
       <p className="text-gray-500">Here is your daily activities and applications</p>

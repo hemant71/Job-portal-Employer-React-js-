@@ -19,7 +19,7 @@ const CompanyInfo = () => {
   };
 
   return (
-    <>      
+    <div className='p-4'>      
 
       <div>
       <h1 className='text-[18px] font-semibold mb-2 '>Logo & Banner Image</h1>
@@ -78,7 +78,7 @@ const CompanyInfo = () => {
       </button>
 
       
-      </>
+      </div>
   )
 }
 

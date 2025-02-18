@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const ErrorPage = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="flex items-center justify-center min-h-screen p-4">
       <div className="text-center md:text-left md:flex md:items-center md:space-x-6">
         <div>
           <h1 className="text-[34px] font-semibold">Oops! Page not found</h1>

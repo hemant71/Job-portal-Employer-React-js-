@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { IoCloseCircleOutline } from "react-icons/io5";
@@ -20,7 +21,7 @@ const AccountSetting = () => {
   };
 
   return (
-    <div className="overflow-y-scroll overflow-x-hidden scrollbar-hide h-[600px] ">
+    <div className="overflow-y-scroll overflow-x-hidden scrollbar-hide h-[600px] hide-scrollbar p-4">
       {/* Contact Information */}
       <div className="mt-3">
         <h2 className="text-lg font-semibold text-gray-700">

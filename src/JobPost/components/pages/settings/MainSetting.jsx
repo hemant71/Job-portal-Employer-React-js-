@@ -5,7 +5,7 @@ const MainSetting = () => {
   const [activeTab, setActiveTab] = useState(1); // Default active component
 
   return (
-    <div className="md:my-3 md:mx-3">
+    <div className="md:my-3 md:mx-3 p-4">
       <div>
         {/* Heading */}
         <h1 className="text-[24px] font-semibold  ">Settings</h1>

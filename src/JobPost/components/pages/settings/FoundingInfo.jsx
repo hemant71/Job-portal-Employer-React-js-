@@ -7,7 +7,7 @@ const FoundingInfo = () => {
   const [companyVision, setCompanyVision] = useState("");
 
   return (
-    <div className=" ">
+    <div className="p-4 ">
       {/* Form Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {/* Organization Type */}
