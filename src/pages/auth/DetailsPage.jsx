@@ -23,7 +23,7 @@ const DetailsPage = () => {
             {/* Bottom Section - Company Details */}
             <div className="w-full p-6 bg-white shadow-lg rounded-2xl mt-[-40px] relative flex flex-col items-center gap-6">
                 {/* Company Name & Verification (Above Grid) */}
-                <div className="w-full flex flex-col items-start items-center">
+                <div className="w-full flex flex-col items-center">
                     {/* Company Name & Verification (Aligned Left) */}
                     <div className="w-full max-w-xl m-5">
                         <div className="flex items-center gap-2">
