@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Page1 from "../../assets/Page1.png";
 import PhoneCall from "../../assets/PhoneCall.png";
 import Background from "../../assets/Background.png";
@@ -10,6 +11,12 @@ import Linkedin from "../../assets/Linkedin.png"
 import Circle from "../../assets/Circle.png"
 
 const Login = () => {
+const navigate=useNavigate()
+
+const gotoHome=()=>{
+    navigate('/home')
+}
+
     return (
         <div className="fixed top-0 left-0 w-full h-screen flex z-[9999] bg-white">
 
@@ -55,7 +62,7 @@ const Login = () => {
                 </div>
 
                 {/* Login Button */}
-                <button className="w-full h-[60px] max-w-lg bg-violet-600 text-white py-2 rounded-lg mt-6">
+                <button onClick={gotoHome} className="w-full h-[60px] max-w-lg bg-violet-600 text-white py-2 rounded-lg mt-6">
                     Login
                 </button>
 

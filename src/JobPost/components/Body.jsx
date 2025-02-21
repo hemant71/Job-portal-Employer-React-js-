@@ -6,7 +6,7 @@ import Footer from "./Footer/Footer";
 
 const Body = ({ children }) => {
   const location = useLocation();
-  const isHiddenPage = ["/faqs", "/termsConditions", "/contact", "/talentPool"].includes(location.pathname);
+  const isHiddenPage = ["/faqs", "/termsConditions", "/contact", "/talentPool",'/login','/'].includes(location.pathname);
   const isHiddenSidebar = isHiddenPage || [ "/not-found",'/comingSoonPage'].includes(location.pathname)
   const isHiddenFooter = isHiddenPage || [ '/comingSoonPage'].includes(location.pathname)
 

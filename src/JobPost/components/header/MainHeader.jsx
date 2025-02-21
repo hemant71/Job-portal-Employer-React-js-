@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const MainHeader = () => {
   const headerText = [
-    { name: "Home", path: "/" },
+    { name: "Home", path: "/home" },
               { id: 1, name: "Find Candidate", path: "/find-candidate" },
               { id: 2, name: "Dashboard", path: "/dashboard" },
               { id: 3, name: "My Jobs", path: "/my-jobs" },

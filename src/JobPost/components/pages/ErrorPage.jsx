@@ -13,7 +13,7 @@ const ErrorPage = () => {
             Something went wrong. It looks like the link is<br/> broken or the page is removed.
           </p>
           <div className="flex justify-center md:justify-start mt-4 space-x-4">
-            <NavLink to="/">
+            <NavLink to="/home">
               <button className="flex items-center bg-[#7900BA] text-white px-4 py-2 rounded-md">
                 Home <FaArrowRightLong className="ml-3" />
               </button>

@@ -65,7 +65,7 @@ const Dashboard = () => {
                     </td>
                     <td className="py-2 text-gray-800">{job.applications} Applications</td>
                     <td className="py-2 relative">
-                      <div className="flex gap-1">
+                      <div className="flex gap-1 items-center">
                         <button
                           onClick={() => setMenuIndex(menuIndex === index ? null : index)}
                           className="px-3 py-1 bg-purple-500 text-white rounded-md focus:outline-none"
@@ -75,7 +75,7 @@ const Dashboard = () => {
                         <BsThreeDotsVertical />
                       </div>
                       {menuIndex === index && (
-                        <div className="relative right-0 mt-2 bg-white shadow-md rounded-md border w-40">
+                        <div className="absolute z-30 right-28 mt-2 bg-white shadow-md rounded-md border  w-40">
                           <button onClick={() => setSelectedJob(job.title)} className="block w-full text-left px-4 py-2 hover:bg-gray-100">Promote Job</button>
                           <button className="block w-full text-left px-4 py-2 hover:bg-gray-100">View Details</button>
                           <button className="block w-full text-left px-4 py-2 text-red-600 hover:bg-gray-100">Make it Expire</button>

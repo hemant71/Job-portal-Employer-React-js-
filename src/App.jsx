@@ -37,7 +37,7 @@ function App() {
         <Router>
           <Body>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
               <Route path="/find-candidate" element={<FindCandidate />} />
               <Route path="/dashboard" element={<Dashboard />}>
                 <Route path="overview" element={<Overview />} />
@@ -59,11 +59,11 @@ function App() {
               {/* These are login components. 
                   They are currently commented out due to uncertainty about the routing. */}
 
-              {/* <Route path="/" element={<Layout />} />
+              <Route path="/" element={<Layout />} />
               <Route path="/login" element={<Login />} />
               <Route path="/forgetPassword" element={<ForgetPassword />} />
               <Route path="/resetPassword" element={<ResetPassword />} />
-              <Route path="/detailspage" element={<DetailsPage />} /> */}
+              <Route path="/detailspage" element={<DetailsPage />} />
               <Route path="*" element={<NotFound/>} />
 
             </Routes>
