@@ -23,6 +23,12 @@ import TermsConditions from'./JobPost/components/TermsConditions'
 import Contact from'./JobPost/components/Contact'
 import TalentPool from './JobPost/components/TalentPool'
 import ComingSoonPage from "./pages/module/ComingSoonPage";
+import Signup from "./pages/auth/Signup";
+import VerifyAccount from "./pages/auth/VerfiyAccount";
+import PhoneVerification from "./pages/auth/PhoneVerification";
+import EmailVerification from "./pages/auth/EmailVerification";
+import PhoneVerificationSuccessful from "./pages/auth/PhoneVerificationSuccessful";
+import EmailVerificationSuccessful from "./pages/auth/EmailVerificationSuccessful";
 
 const Home = () => <h1>Home<MainContainer/></h1>;
 const FindCandidate = () => <h1>FindCandidate</h1>;
@@ -58,9 +64,16 @@ function App() {
               
               {/* These are login components. 
                   They are currently commented out due to uncertainty about the routing. */}
+              <Route path="/" element={<Layout/>}/>
+              {/* not being rendered sperate path */}
+              <Route path="/phoneVerification" element={<PhoneVerification/>}/>
+              <Route path="/emailVerification" element={<EmailVerification/>}/>
+              <Route path="/phoneVerificationSuccessful" element={<PhoneVerificationSuccessful/>} /> 
+              <Route path="/emailVerificationSuccessful" element={<EmailVerificationSuccessful/>} /> 
+              <Route path="/verifyAccount" element={<VerifyAccount/>} /> 
 
-              <Route path="/" element={<Layout />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup/>} /> 
               <Route path="/forgetPassword" element={<ForgetPassword />} />
               <Route path="/resetPassword" element={<ResetPassword />} />
               <Route path="/detailspage" element={<DetailsPage />} />
