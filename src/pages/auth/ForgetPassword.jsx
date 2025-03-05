@@ -31,35 +31,39 @@ const ForgetPassword = () => {
                     </p>
 
                     {/* Input Field */}
-                    <div className="w-full max-w-2xl">
+                    <div className="w-full flex justify-center items-center max-w-2xl">
                         <input
                             type="email"
                             placeholder="Email"
-                            className="border p-3 w-full rounded"
+                            className="border bg-[#F7F8F9] p-2 w-2/3 rounded"
                         />
+                         
                     </div>
-
-                    {/* Go Back to Login */}
-                    <div className="w-full max-w-2xl mt-3 text-right">
-                        <span>Go Back to </span>
-                        <Link to="/login" className="text-violet-900 hover:underline">
+                    <span className="text-right text-[#7D7D7D]">Go Back to
+                    <Link to="/login" className="text-right text-[#7900BA] ">
                             Login
-                        </Link>
-                    </div>
+                    </Link>
+                         </span>
+                   
+                    {/* Go Back to Login */}
+                    {/* <div className="w-1/2  mt-3 text-right">
+                        <span className="text-[#7D7D7D]">Go Back to </span>
+                       
+                    </div> */}
 
                     {/* Reset Password Button */}
                     <button
                         onClick={handleResetPassword} // Added onClick
-                        className="w-full max-w-sm flex items-center justify-center bg-violet-700 text-white py-3 rounded-lg hover:bg-violet-800 transition mt-5"
+                        className="w-1/3  flex items-center justify-center bg-[#7900BA] text-white py-2 rounded-lg  transition mt-5"
                     >
                         <span>Reset Password</span>
                         <img src={Continue} alt="Continue" className="size-4 ml-2" />
                     </button>
 
                     {/* Sign Up Link */}
-                    <p className="mt-5">
+                    <p className="text-[#7D7D7D] mt-5">
                         Don't have an account?{" "}
-                        <a href="#" className="text-violet-600 hover:underline">Sign Up</a>
+                        <a href="#" className="text-[#7900BA] font-semibold ">Sign Up</a>
                     </p>
                 </div>
             </div>

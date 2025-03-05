@@ -28,60 +28,61 @@ const gotoHome=()=>{
             />
 
             {/* Left Side - Login Form */}
-            <div className="w-[50%] flex flex-col justify-center items-center">
+            <form className="w-[50%] flex flex-col justify-center items-center">
                 {/* Title */}
                 <h2 className="text-2xl font-semibold mb-10">
                     Login In to <span className="text-violet-600">TechnoHire</span>
                 </h2>
 
                 {/* Input Fields */}
-                <div className="w-full max-w-2xl space-y-4">
+                <div className="w-2/3 max-w-2xl space-y-4">
                     <input
                         type="email"
                         placeholder="Email"
-                        className="border p-3 w-full rounded"
+                        className="border bg-[#F7F8F9] outline-none p-2 w-full rounded px-10  "
+                        
                     />
                     <input
                         type="password"
                         placeholder="Password"
-                        className="border p-3 w-full rounded"
+                        className="px-10 bg-[#F7F8F9] outline-none border p-2 w-full rounded"
                     />
                 </div>
 
                 {/* Remember Me & Forgot Password */}
-                <div className="w-full max-w-2xl flex justify-between items-center mt-3">
+                <div className="w-2/3 max-w-2xl flex justify-between items-center mt-2">
                     <label className="flex items-center space-x-2">
                         <input type="checkbox" className="accent-violet-600" />
-                        <span>Remember Me</span>
+                        <span className="text-[#767F8C] text-sm">Remember Me</span>
                     </label>
                     <Link to="/forgetPassword">
-                        <p className="text-violet-600 hover:underline">
+                        <p className="text-sm text-violet-600 hover:underline">
                             Forget Password?
                         </p>
                     </Link>
                 </div>
 
                 {/* Login Button */}
-                <button onClick={gotoHome} className="w-full h-[60px] max-w-lg bg-violet-600 text-white py-2 rounded-lg mt-6">
+                <button onClick={gotoHome} className="w-60 h-[45px]  bg-violet-600 text-white  rounded-lg mt-6">
                     Login
                 </button>
 
                 {/* Or Login With */}
                 <div className="flex items-center w-full max-w-sm my-5">
                     <div className="flex-grow h-[1px] bg-gray-300"></div>
-                    <span className="mx-2 text-gray-500">Or Login with</span>
+                    <span className="mx-2 text-[#6A707C] font-semibold">Or Login with</span>
                     <div className="flex-grow h-[1px] bg-gray-300"></div>
                 </div>
 
                 {/* Social Login Buttons */}
                 <div className="flex space-x-4">
-                    <button className="border border-gray-400 p-2 rounded">
+                    <button className="flex justify-center items-center w-20 border border-gray-200 p-2 rounded">
                         <img src={Facebook} alt="Facebook" className="w-5 h-5" />
                     </button>
-                    <button className="border border-gray-400 p-2 rounded">
+                    <button className="flex justify-center items-center w-20 border border-gray-200 p-2 rounded">
                         <img src={Google} alt="Google" className="w-5 h-5" />
                     </button>
-                    <button className="border border-gray-400 p-2 rounded">
+                    <button className="flex justify-center items-center w-20 border border-gray-200 p-2 rounded">
                         <img src={Linkedin} alt="LinkedIn" className="w-5 h-5" />
                     </button>
                 </div>
@@ -93,7 +94,7 @@ const gotoHome=()=>{
                         Sign Up
                     </a>
                 </p>
-            </div>
+            </form>
 
             {/* Right Side - Logo Background */}
             <div
